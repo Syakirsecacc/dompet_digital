@@ -29,7 +29,7 @@ Route::post('/topUp', [App\Http\Controllers\WalletController::class, 'topUp'])->
 Route::post('/acceptRequest', [App\Http\Controllers\WalletController::class, 'acceptRequest'])->name('acceptRequest');
 Route::post('/withdraw', [App\Http\Controllers\WalletController::class, 'withdraw'])->name('withdraw');
 Route::post('/transfer',[App\Http\Controllers\WalletController::class, 'transfer'])->name('transfer'); 
-
+Route::get('/mutasi/print', [App\Http\Controllers\WalletController::class, 'printMutasi'])->name('mutasi.print');
 
 
 

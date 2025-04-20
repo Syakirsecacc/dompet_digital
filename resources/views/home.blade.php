@@ -159,7 +159,8 @@
 
                                     <div class="card bg-white shadow-sm border-0">
                                         <div class="card-header border-0">
-                                            Mutasi Transaction
+                                            Mutasi Transaction 
+                                            <a href="{{ route('mutasi.print') }}" class="btn btn-outline-secondary mt-3">🖨️ Cetak Mutasi</a>
                                         </div>
 
                                         <div class="card-body">
@@ -386,9 +387,11 @@
                             <div class="col-xxl-5  col-sm-12">
                                 <div class="card bg-white shadow-sm border-0">
                                     <div class="card-header border-0">
-                                        History Transaction
+                                        History Transaction 
+                                        <a href="{{ route('mutasi.print') }}" class="btn btn-outline-secondary mt-3">🖨️ Cetak Mutasi</a>
                                     </div>
 
+                                    
                                     <div class="card-body">
                                         <ul class="list-group">
                                             @foreach ($mutasi as $data)
@@ -492,6 +495,8 @@
                             <div class="card bg-white shadow-sm border-0">
                                 <div class="card-header border-0">
                                     History Transaction
+                                    <a href="{{ route('mutasi.print') }}" class="btn btn-outline-secondary mt-3">🖨️ Cetak Mutasi</a>
+                            
                                 </div>
 
                                 <div class="card-body">
@@ -526,5 +531,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

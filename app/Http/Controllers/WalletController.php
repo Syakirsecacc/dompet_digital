@@ -105,4 +105,10 @@ class WalletController extends Controller
 
         return redirect()->back()->with('status', 'Permintaan berhasil disetujui');
     }
+    public function printMutasi()
+{
+    $mutasi = Wallet::where('user_id', Auth::id())->where('status', 'done')->orderBy('created_at', 'desc')->get();
+
+    return view('wallet.print', compact('mutasi'));
+}
 }
